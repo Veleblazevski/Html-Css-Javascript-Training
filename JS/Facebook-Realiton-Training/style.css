@@ -1,0 +1,167 @@
+body {
+    background-color: black;
+}
+
+.bigDiv {
+    width: 77%;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 25px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+}
+
+.divUnder {
+    width: 77%;
+    height: 500px;
+    position: relative;
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 24px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+h1 {
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+.leftDiv {
+    width: 50%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.albumDiv {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 40px;
+    height: 30%;
+    width: 106%;
+}
+
+.smallDiv {
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 24px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+    width: 184px;
+    height: 89px;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.rightDiv {
+    color: aqua;
+    width: 90%;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.gridpic {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 24px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+}
+
+.meVele {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.postDiv {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr)
+}
+
+.myUnderPic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+}
+
+.gifPictures {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 24px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+    z-index: 999;
+}
+
+.myNewImage {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+#myPop {
+    position: absolute;
+    height: 73%;
+    width: 84%;
+    top: 17%;
+    left: 12%;
+}
+
+#myBtn {
+    position: absolute;
+    right: 0%;
+    width: 30px;
+    height: 29px;
+    float: right;
+    cursor: pointer;
+    box-shadow: 0 0 0 10px hsl(0, 0%, 50%), 0 0 0 15px hsl(0, 0%, 60%), 0 0 0 20px hsl(0, 0%, 70%), 0 0 0 24px hsl(0, 0%, 80%), 0 0 0 30px hsl(0, 0%, 90%);
+}
+
+#mySpan {
+    font-size: 31px;
+    font-weight: bold;
+    font-family: cursive;
+    position: absolute;
+    right: 13%;
+    top: -24%;
+}
+
+#myOtherPop {
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    top: 17%;
+    left: 12%;
+    background: cornflowerblue;
+}
+
+#myLeft {
+    position: absolute;
+    height: 160px;
+    /* background: blue; */
+    font-size: 100px;
+    top: 39%;
+    left: 0;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+#myRight {
+    position: absolute;
+    height: 160px;
+    /* background: blue; */
+    font-size: 100px;
+    top: 39%;
+    right: 0;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+}

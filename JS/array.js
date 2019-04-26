@@ -1,0 +1,10 @@
+let vele = ["A","B","C","D","E"];
+console.log(vele);
+console.log(vele.push("F","G"));
+console.log(vele.shift());
+console.log(vele.length);
+console.log(vele.length-1);
+let veleNew = [1,2,3,4,5];
+let veleBlazevski = vele.concat(veleNew);
+console.log(veleBlazevski);
+console.log(veleBlazevski.sort());

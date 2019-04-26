@@ -1,0 +1,345 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+tbody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 2%;
+    width: 65%;
+    height: 4%;
+    grid-gap: 7px;
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+#body>div.data-table>div>input {
+    color: white;
+    background: no-repeat;
+    font-size: 19px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid wheat;
+}
+
+#showDiv {
+    height: 100%;
+    width: 100%;
+    background: #c3bcbccc;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    border: 137px solid #b7b4b400;
+    display: none;
+}
+
+.showInfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.data-table {
+    position: absolute;
+    height: 100%;
+    width: 74%;
+    left: 23%;
+    border: 6px solid darkgrey;
+    overflow-y: scroll;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #333;
+}
+
+.centered {
+    position: absolute;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+
+
+/* FF 4-18 */
+
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+
+
+/* FF 19+ */
+
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+
+/* IE 10+ */
+
+.group {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 36.6666666667px;
+    color: rgba(255, 255, 255, 0.5);
+    font: 400 36.6666666667px Roboto;
+    cursor: text;
+    left: 8%;
+    transition: 0.25s ease;
+}
+
+#body>div.centered>div>label:nth-child(8) {
+    top: 175px;
+}
+
+#nameEnter,
+#emailEnter,
+#mobileEnter {
+    display: block;
+    padding-top: 48.666667px;
+    border: none;
+    border-radius: 0;
+    color: white;
+    background: #333;
+    font-size: 25.666667px;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+#nameEnter:valid~label,
+#emailEnter:valid~label,
+#mobileEnter:valid~label {
+    top: 0;
+    font: 700 22px Roboto;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#nameEnter:focus,
+#emailEnter:focus,
+#mobileEnter:focus {
+    outline: none;
+}
+
+#nameEnter:focus~label,
+#emailEnter:focus~label,
+#mobileEnter:focus~label {
+    top: 0;
+    font: 700 22px Roboto;
+    color: #2196f3;
+}
+
+#nameEnter:focus~.bar:before,
+#emailEnter:focus~.bar:before,
+#mobileEnter:focus~.bar:before {
+    transform: translateX(0);
+}
+
+#nameEnter:-webkit-autofill,
+#emailEnter:-webkit-autofill,
+#mobileEnter:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #333 inset;
+    -webkit-text-fill-color: white !important;
+}
+
+.bar {
+    background: rgba(255, 255, 255, 0.5);
+    content: "";
+    width: 355px;
+    height: 3.6666666667px;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.bar:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: #2196f3;
+    transform: translateX(-100%);
+}
+
+ ::selection {
+    background: rgba(33, 150, 243, 0.3);
+}
+
+#body>div.centered>div>label:nth-child(5) {
+    top: 95px;
+}
+
+.btn {
+    width: 135px;
+    margin-top: 6%;
+    margin-left: 0%;
+    height: 42px;
+    border-radius: 60px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.main {
+    border: solid 3px #f3f3f3;
+    background: #dddddd;
+}
+
+.main:hover {
+    background-color: #fff;
+    border: solid 3px #c44040;
+    transition: ease 0.2s;
+    box-shadow: 0px 10px 0px #c44040;
+    transform: scale(1.03) translatey(-10px);
+}
+
+.main:hover>.text {
+    color: #203447;
+}
+
+.main:hover>.fwdArrow {
+    border-color: #203447;
+}
+
+.main:active {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 0px #203447;
+    transition-duration: 0.04s;
+}
+
+.danger {
+    background-color: #c44040;
+    border: solid 3px #c44040;
+}
+
+.danger:hover {
+    background-color: #fff;
+    border: solid 3px #c44040;
+    transition: ease 0.2s;
+    box-shadow: 0px 10px 0px #c44040;
+    transform: scale(1.03) translatey(-10px);
+}
+
+.danger:hover>.text {
+    color: #c44040;
+}
+
+.danger:hover>.bwdArrow {
+    border-color: #c44040;
+}
+
+.danger:active {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 0px #c44040;
+    transition-duration: 0.04s;
+}
+
+.btn-append {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn-prepend {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.text {
+    text-align: center;
+    font-size: 22px;
+    width: 100%;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #616161;
+    transition: ease 0.2s;
+}
+
+.fwdArrow {
+    width: 20px;
+    height: 20px;
+    border-color: #1e1e2d;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    transform: rotate(-45deg);
+    border-color: #fff;
+    transition: ease 0.2s;
+}
+
+.bwdArrow {
+    width: 20px;
+    height: 20px;
+    border-color: #1e1e2d;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    transform: rotate(135deg);
+    border-color: #fff;
+    transition: ease 0.2s;
+}
+
+.bwdArrow:hover {
+    transition: ease 0.4s;
+}
+
+#body>div.data-table>div>button {
+    width: 109px;
+    margin-top: 6%;
+    margin-left: 0%;
+    height: 42px;
+    border-radius: 60px;
+    transition: ease 0.2s;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#body>div.data-table>div>button:hover {
+    background-color: #fff;
+    border: solid 3px #c44040;
+    transition: ease 0.2s;
+    box-shadow: 0px 10px 0px #c44040;
+    transform: scale(1.03) translatey(-10px);
+}
+
+.editClassInput {
+    background: #dddddd !important;
+    color: black !important;
+    border: 3px solid black !important;
+    border-radius: 6px !important;
+}

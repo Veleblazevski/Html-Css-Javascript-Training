@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-results {
+    display: none;
+}
+
+#mainContainer {
+    height: auto;
+    width: 1500px;
+    display: grid;
+    background: red;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.divLeft {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    grid-template-rows: 0.1fr 1fr 3fr;
+}
+
+.paragraphBio {
+    margin-top: -113%;
+}
+
+.divRight {
+    display: grid;
+}
+
+.imageArtist {
+    width: 100%;
+}
+
+.albumDiv {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
